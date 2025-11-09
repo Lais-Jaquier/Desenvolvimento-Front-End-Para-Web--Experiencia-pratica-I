@@ -1,0 +1,29 @@
+.logo{width:160px}
+.header-title{font-size:var(--fs-xl);font-weight:700}
+
+
+/* Home */
+.hero{
+background:linear-gradient(90deg, color-mix(in srgb,var(--color-primary-3) 60%, var(--color-neutral-1)), transparent 60%);
+padding:var(--space-5) 0;
+}
+.hero .content{max-width:720px}
+
+
+/* Projects */
+.projects-list{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-3)}
+@media (max-width: 1024px){.projects-list{grid-template-columns:repeat(2,1fr)}}
+@media (max-width: 480px){.projects-list{grid-template-columns:repeat(1,1fr)}}
+
+
+/* Cadastro */
+.form-wrapper{max-width:720px;background:var(--color-neutral-1);padding:var(--space-3);border-radius:12px}
+
+
+@import url('base.css');
+@import url('layout.css');
+@import url('components.css');
+@import url('pages.css');
+
+
+header a{transition:all .15s ease}

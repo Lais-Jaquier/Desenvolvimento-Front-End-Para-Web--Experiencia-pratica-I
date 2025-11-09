@@ -1,0 +1,15 @@
+:root{
+--bp-xs: 320px;
+--bp-sm: 480px;
+--bp-md: 768px;
+--bp-lg: 1024px;
+--bp-xl: 1280px;
+}
+
+
+/* Container já definido no base - grid de 12 colunas */
+.grid{
+display:grid;
+grid-template-columns: repeat(var(--grid-columns), 1fr);
+gap:var(--space-3); 
+}

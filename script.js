@@ -24,3 +24,6 @@ document.getElementById("formCadastro").addEventListener("submit", function(even
         "Estado: " + estado
     );
 });
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("active");
+}
