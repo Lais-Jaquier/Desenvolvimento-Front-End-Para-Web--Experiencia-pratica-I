@@ -1,0 +1,99 @@
+.btn{
+display:inline-block;border:0;padding:10px 16px;border-radius:8px;cursor:pointer;font-weight:600;text-align:center;
+}
+.btn-primary{background:var(--color-primary-3);color:var(--color-neutral-1)}
+.btn-primary:hover{filter:brightness(.95)}
+.btn-secondary{background:var(--color-secondary-1);color:var(--color-neutral-4)}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+
+
+/* Card */
+.card{
+background:var(--color-neutral-1);
+border-radius:12px;
+padding:var(--space-3);
+box-shadow:0 6px 18px rgba(33,33,33,.06);
+}
+.card-title{font-size:var(--fs-lg);margin-bottom:var(--space-2)}
+.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-3)}
+@media (max-width: 1024px){.card-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width: 480px){.card-grid{grid-template-columns:repeat(1,1fr)}}
+
+
+/* Form styles */
+.form-group{display:flex;flex-direction:column;gap:8px;margin-bottom:var(--space-2)}
+input[type='text'],input[type='email'],input[type='tel'],input[type='date'],select,textarea{
+padding:10px;border:1px solid #ddd;border-radius:8px;font-size:var(--fs-sm)
+}
+input:focus,select:focus,textarea:focus{border-color:var(--color-primary-2);box-shadow:0 4px 12px rgba(67,160,71,.08)}
+
+
+/* Validation visual */
+.is-valid{border-color:var(--color-success)}
+.is-invalid{border-color:var(--color-error);background:color-mix(in srgb,var(--color-error) 4%, var(--color-neutral-1))}
+
+
+/* Alerts / Toasts */
+.alert{padding:var(--space-2);border-radius:8px;margin-bottom:var(--space-2)}
+.alert-success{background:color-mix(in srgb,var(--color-success) 8%,var(--color-neutral-1));border-left:4px solid var(--color-success)}
+.alert-warning{background:color-mix(in srgb,var(--color-warning) 8%,var(--color-neutral-1));border-left:4px solid var(--color-warning)}
+.alert-error{background:color-mix(in srgb,var(--color-error) 8%,var(--color-neutral-1));border-left:4px solid var(--color-error)}
+
+
+/* Badge / Tag */
+.badge{display:inline-block;padding:4px 8px;border-radius:999px;font-size:12px;background:var(--color-neutral-2);border:1px solid #e0e0e0}
+
+
+/* Modal (base) */
+.modal-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.4);display:flex;align-items:center;justify-content:center;z-index:999}
+.modal{background:var(--color-neutral-1);border-radius:12px;padding:var(--space-3);width:min(720px, calc(100% - 32px))}
+/* Estilos do menu */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Ícone hamburguer (apenas mobile) */
+.hamburger {
+    font-size: 32px;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: block;
+}
+
+/* Lista do menu normal */
+nav ul {
+    list-style: none;
+    display: none;
+    gap: 20px;
+    padding: 0;
+}
+
+#menu.active ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: #2e7d32;
+    padding: 15px 0;
+    border-radius: 8px;
+}
+
+/* HAMBÚRGUER SEMPRE APARECE */
+.hamburger {
+    font-size: 32px;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: block;
+}
+
+/* OPCIONAL: CENTRALIZAR */
+nav ul a {
+    display: block;
+    text-align: horizontal center;
+}
