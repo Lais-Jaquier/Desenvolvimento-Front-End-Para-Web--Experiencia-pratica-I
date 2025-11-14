@@ -1,49 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ONG - Página Inicial</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ONG Caminhos da Esperança</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header>
+  <header>
     <img src="ImagesProjeto/logo.png" alt="Logo do Projeto" width="200" class="logo">
-    <h1>Bem-vindo à ONG Caminhos da esperança</h1>
+    <h1>ONG Caminhos da Esperança</h1>
 
-    <!-- Ícone do menu hamburguer -->
-    <button class="hamburger" onclick="toggleMenu()">
-        ☰
-    </button>
+    <!-- Menu hambúrguer -->
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
 
-    <!-- Menu normal + menu mobile -->
     <nav id="menu">
-        <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="projetos.html">Projetos</a></li>
-            <li><a href="cadastro.html">Cadastro</a></li>
-        </ul>
+      <ul>
+        <li><a href="#inicio" onclick="navegar('inicio')">Início</a></li>
+        <li><a href="#projetos" onclick="navegar('projetos')">Projetos</a></li>
+        <li><a href="#cadastro" onclick="navegar('cadastro')">Cadastro</a></li>
+      </ul>
     </nav>
-</header>
+  </header>
 
-    <main>
-        <section>
-            <h2>Sobre nós</h2>
-            <img src="ImagesProjeto/foto1.png.jpeg" alt="Foto exemplo" width="400" class="img-center">
-            <p>A Caminhos da Esperança nasceu em 2012, a partir da iniciativa de um grupo de voluntários que acreditava no poder da educação e do acolhimento para transformar vidas. A ideia surgiu quando uma professora, ao perceber a quantidade de crianças e adolescentes em situação de vulnerabilidade em sua comunidade, decidiu unir amigos e profissionais de diferentes áreas para oferecer apoio social, educacional e emocional.
+  <main id="conteudo">
+    <!-- O conteúdo dinâmico será carregado aqui -->
+  </main>
 
-Desde então, a ONG tem atuado com o objetivo de proporcionar oportunidades de desenvolvimento pessoal e profissional, por meio de projetos de reforço escolar, oficinas de arte e cultura, esportes e acompanhamento psicológico. Além disso, promove campanhas de arrecadação de alimentos, roupas e materiais escolares, fortalecendo o vínculo comunitário e o sentimento de solidariedade.
+  <footer>
+    <p>© 2025 ONG Caminhos da Esperança</p>
+  </footer>
 
-Ao longo dos anos, a Caminhos da Esperança se tornou referência local, ajudando centenas de jovens a sonhar com um futuro melhor — e, principalmente, a trilhar seus próprios caminhos com dignidade, esperança e confiança no amanhã.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2025 Meu Projeto</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <!-- Scripts (na ordem certa) -->
+  <script src="js/templates.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/spa.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
+
 
 

@@ -4,36 +4,120 @@
 @import url('pages.css');
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #56854d;   
+    background-color: #56854d;
 }
 
-header {
-    background-color: #6ca361;   
-    color: rgb(242, 243, 242);
-    padding: 19px;
-    text-align: center;
+header header .logo {
+    width: 180px;
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+
+    /* Sombra leve na imagem (opcional) */
+    filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.2));
+}
+
+/* Título */
+header h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+    padding: 12px 25px;
+    background: #ffe602;        /* Faixa branca */
+    color: #3b5d3a;             /* Verde escuro elegante */
+    border-radius: 12px;        /* Bordas arredondadas */
+    display: inline-block;      /* Faz a faixa ter largura só do texto */
+    text-shadow: none;          /* Remove a sombra anterior */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25); /* Sombra suave */
+}
+
+
+/* Botão hamburguer moderno */
+.hamburger {
+    background: #2e7917;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 26px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 10px auto;
+    display: block;
+}
+
+.hamburger:hover {
+    background: #333;
+    transform: scale(1.05);
+}
+
+/* Menu mobile */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
-    display: flex;       
-    gap: 20px;           
-    justify-content: center; 
+    padding: 15px;
+    margin-top: 10px;
+    background: #2f632a;
+    width: 200px;
+    border-radius: 12px;
+    display: none; /* escondido até clicar */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    animation: fadeDown 0.3s ease;
 }
 
+/* Animação suave */
+@keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-5px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Quando ativar */
+#menu.active ul {
+    display: block;
+}
+
+/* Links dentro do menu */
 nav ul li {
-    display: list-item;
-    margin: 0 10px;
+    margin: 10px 0;
+    text-align: center;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 6px 0;
+    display: block;
+    transition: 0.3s;
 }
+
+/* Efeito hover estiloso */
+nav ul li a:hover {
+    color: #b7ffb7;
+    transform: scale(1.05);
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+h1, h2, h3, p, img {
+    margin-bottom: 20px;
+}
+
+
+
 
 section {
     margin: 20px;
